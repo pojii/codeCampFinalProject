@@ -13,31 +13,53 @@
 </head>
 
 <body>
-    <h1>Teerapord Lin</h1>
+    <h1><span id="name">Teerapord</span> <span id="surname">Lin</span></h1>
     <img
         src="https://scontent.fbkk13-1.fna.fbcdn.net/v/t1.0-9/41603568_2173632999377688_1064313911223779328_n.jpg?_nc_cat=108&_nc_eui2=AeFNnFPSFvJ2uWaNa-F-Y5gsdjiHDrdxENT7R2wQRsv_5jxdLG_ttgDAJF4hDeLJUbGUL1sUz7Ttp0IN0uTuCh_ea61oFQ3kMRAInkbzTDKgyA&_nc_oc=AQlQbt5wFObi3h_kAdRQicsgInO0Bi1C1dUV_zGUKYS7kwwB0eXPUQM-XRZ2bj3jnN8&_nc_ht=scontent.fbkk13-1.fna&oh=cc07f4f64045f00a78eb93e18ef2e322&oe=5E5E062F">
     <h2>Nickname: Poj</h2>
     <h3>Education</h3>
     <table>
-            <tr>
-                <th>School/University</th>
-                <th>Period</th>
-            </tr>
-            <tr>
-                <td>Chulalongkorn University</td>
-                <td>2557 - 2560</td>
-            </tr>
-            <tr>
-                <td>Suankularb Witthayalai Nonthaburi</td>
-                <td>2551 - 2556</td>
-            </tr>
-        </table>
+        <tr>
+            <th>School/University</th>
+            <th>Period</th>
+        </tr>
+        <tr>
+            <td>Chulalongkorn University</td>
+            <td>2557 - 2560</td>
+        </tr>
+        <tr>
+            <td>Suankularb Witthayalai Nonthaburi</td>
+            <td>2551 - 2556</td>
+        </tr>
+    </table>
     <h3>Talent</h3>
-    <ul>
+    <ul id="talentList">
         <li>Drive Car</li>
         <li>Programming</li>
         <li>Chinese</li>
     </ul>
+    <h3>Add Talent</h3>
+    <form action="#" id="talentForm">
+        <label for="talent">Talent</label>
+        <input type="text" name="talent" id="talent" />
+        <input type="submit">
+    </form>
+    <h3>Change Name</h3>
+    <form action="#" id="changeNameForm">
+        <label for="name">name</label>
+        <input type="text" name="name" id="nameField" />
+        <label for="surname">surname</label>
+        <input type="text" name="surname" id="surnameField" />
+        <input type="submit">
+    </form>
+    <h3>Change BG</h3>
+    <form action="#" id="changeBG">
+        <label for="bg">bg</label>
+        <input type="text" name="bg" id="bgField" />
+        <input type="submit">
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
